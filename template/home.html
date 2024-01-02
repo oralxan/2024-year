@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+</head>
+{% extends 'base.html' %}
+{% block content %}
+<body style="background-color: black;" >
+    <h1 style="color: blue; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding: 0;">HAPPY NEW YEAR</h1>
+    <h1 style="color: aliceblue; text-align: center; margin:0;">2024 year </h1>
+    <p style="color: bisque; margin: 100px;">The New Year is here. While some celebrate this new chapter with family, others mark the day surrounded by friends, going out, attending events, and watching fireworks. As you ring in the New Year, there's one more reason to call 2024 special. 2024 is a leap year, which means you have an extra day to complete all the New Year resolutions and achieve new goals. Keep scrolling down to know why 2024 is a leap year, what and when is the leap day, why we have leap days, and all the other details inside.</p>
+    
+</body>
+<main class="m"  style="text-align: center ; ">
+        <button style="width:15% ; height: 60px; font-size: 150%; border-radius: 10px;"> 
+            <a href="{% url 'about' %}">About</a>
+        </button>
+
+</main>
+</div>
+<style>
+.m button a{
+    text-decoration: none;
+}
+.m button:hover{
+    color: black;
+    width:15% ;
+    transition: 0.2s;
+    height: 60px;
+    font-size: 100px;
+    
+    
+}
+.m button a:hover{
+    color: black;
+
+}
+</style>
+
+
+{% endblock %}
+</html>
